@@ -14,6 +14,8 @@ nav .logo {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    padding: 10px;
 }
 
 nav .logo img {
@@ -129,4 +131,69 @@ nav {
 .back .all_btn button:hover {
     background-color: white;
     color: black;
+}
+
+.burger_menu,
+.wrapper_burger_menu {
+    display: none;
+}
+
+.wrapper_burger_menu.change {
+    display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    nav .navigation {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .burger_menu img {
+        width: 30px;
+    }
+
+    .wrapper_burger_menu {
+
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: 15px;
+
+        width: 200px;
+
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .wrapper_burger_menu button {
+        width: 100%;
+        margin: 10px 0;
+
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        color: black;
+
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    nav .logo {
+
+        margin-left: -20px;
+    }
+
 }
