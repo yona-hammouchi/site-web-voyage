@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+nav .logo {
+
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img {
+    width: 30px;
+}
+
+nav .logo h1 {
+    font-size: 16px;
+}
+
+nav .navigation {
+
+    padding: 10px;
+    margin-right: 60px;
+    display: flex;
+    gap: 15px;
+
+}
+
+nav .navigation button {
+
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    color: white;
+}
+
+nav .navigation button:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+    color: white;
+}
+
+.img_to_back {
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+    background-image: url('./assets/background.jpg');
+
+    /* Background settings */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    filter: brightness(50%);
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+}
+
+.back h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.back .fix {
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.back .all_btn {
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 10px;
+
+}
+
+.back .all_btn button {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.back .all_btn button:hover {
+    background-color: white;
+    color: black;
+}
